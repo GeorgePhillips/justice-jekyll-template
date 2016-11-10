@@ -1,0 +1,47 @@
+# ----
+# Site
+
+title: Justice Template
+description: Jekyll template with example content for a law firm.
+url:
+google_analytics_key:
+google_maps_javascript_api_key:
+
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+
+
+# -----
+# Build
+
+collections:
+  - staff
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+permalink: pretty
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+call_to_actions:
+  - Contact
+  - Advice
+  - Map
+
