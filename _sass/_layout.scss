@@ -22,36 +22,36 @@ img {
 }
 
 header {
-	background-position: -250px 100px;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center 175px;
 	height: 80vh;
 	box-sizing: border-box;
 
 
-	h1 {
-		margin: 0;
-		line-height: 100px;
+	.container {
+		text-align: center;
 	}
 
-	.container {
-		text-align: right;
+	@media (min-width: $mobile-break) {
+		background-position: calc(50% - 250px) 100px;
+
+		.container {
+			text-align: right;
+		}
 	}
 
 	nav {
-		max-width: 300px;
-		margin: 0 0 0 auto;
+		max-width: 100%;
 
 		ul {
-			display: flex;
-			justify-content: flex-end;
 			list-style: none;
 			margin: 0;
 			padding: 0;
 
 			li {
-				flex: 0 1 auto;
-				margin: 0 20px;
+				display: inline-block;
+				margin: 0 10px;
 			}
 		}
 	}
@@ -75,7 +75,17 @@ header a.active {
 header,
 footer,
 section {
-	padding: 80px 20px;
+	padding: 35px 20px;
+
+	@media (min-width: $mobile-break) {
+		padding: 80px 20px;
+	}
+}
+
+.content img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 2px;
 }
 
 .main {
@@ -129,13 +139,17 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -20px;
+
+	.staff {
+		margin: 20px;
+	}
 }
 
 .staff {
 	@extend .box;
 	flex: 1 1 300px;
 	flex-wrap: wrap;
-	margin: 20px;
+	margin: 20px 0;
 
 	p {
 		margin: 0;
@@ -143,7 +157,7 @@ section {
 
 	small {
 		opacity: 0.6;
-		font-size: 0.7em;
+		font-size: 1.7rem;
 	}
 }
 
@@ -166,10 +180,10 @@ section {
 
 footer {
 	position: relative;
-	font-size: 0.9em;
+	font-size: 1.9rem;
 
 	h2 {
-		font-size: 1.4em;
+		font-size: 2.5rem;
 		margin: 0 0 30px 0;
 	}
 
@@ -219,7 +233,7 @@ footer {
 }
 
 .testimonials {
-	font-size: 0.9em;
+	font-size: 1.8rem;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -20px;
@@ -291,4 +305,32 @@ footer {
 
 .contact-info {
 	margin: 0 0 25px 0;
+}
+
+
+.post-list {
+	list-style: none;
+	padding: 0;
+}
+
+.post-comments {
+	@extend .box;
+	margin-top: 20px;
+}
+
+.post-summary {
+	@extend .box;
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+
+.post-summary-details {
+	color: #75828a;
+	font-size: 1.9rem;
+}
+
+.post-summary-author {
+	@extend .testimonial-author;
+	margin-left: 0;
 }

@@ -45,15 +45,7 @@
 
 		<section class="main">
 			<div class="container">
-				{% if page.title %}
-					<div class="page-header">
-						<h2>{{ page.title }}</h2>
-					</div>
-				{% endif %}
-
-				<article class="content">
-					{{ content }}
-				</article>
+				{{ content }}
 			</div>
 		</section>
 
@@ -102,6 +94,7 @@
 							<h2>{{ site.data.company.title }}</h2>
 						</li>
 						<li>{{ site.data.company.description }}</li>
+						<li><a href="/feed.xml">{% include social-icon.html icon="rss" %} Subscribe with RSS</a></li>
 					</ul>
 				</div>
 			</div>

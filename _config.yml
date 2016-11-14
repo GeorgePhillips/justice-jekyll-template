@@ -6,6 +6,7 @@ description: Jekyll template with example content for a law firm.
 url:
 google_analytics_key:
 google_maps_javascript_api_key:
+disqus_shortname: justice-jekyll-template.disqus.com
 
 author:
   name:
@@ -24,16 +25,30 @@ defaults:
     scope:
       path: ""
     values:
-      layout: default
+      layout: page
+      background_image_path: /uploads/building.jpg
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
 
 permalink: pretty
 
+jekyll-archives:
+  enabled:
+    - categories
+
 gems:
+  - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
 
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - README.md
   - LICENCE
 
