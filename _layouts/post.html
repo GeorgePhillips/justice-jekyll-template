@@ -8,8 +8,8 @@ layout: page
 
 <h2>Meet the author</h2>
 <div class="post-author staff">
-	{% assign author_id = page.staff_author | prepend: "/staff/" | append: "/" %}
-	{% assign author = site.staff | where: "url", author_id | first %}
+	{% assign author_id = page.author_staff_member | prepend: "/staff_members/" | append: "/" %}
+	{% assign author = site.staff_members | where: "url", author_id | first %}
 
 	{% include staff-member.html member=author %}
 </div>

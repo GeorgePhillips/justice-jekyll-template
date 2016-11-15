@@ -34,7 +34,7 @@ paginate: 1
 paginate_path: "/advice/page-:num/"
 
 collections:
-  - staff
+  - "staff_members"
 
 defaults:
   -
