@@ -79,7 +79,7 @@
 							</li>
 							{% for link in column.links %}
 								<li>
-									<a {% if link.new_window %}target="_blank"{% endif %} href="{{ link.link }}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+									<a {% if link.new_window %}target="_blank"{% endif %} href="{{ link.link }}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
 										{% if link.social_icon %}
 											{% include social-icon.html icon=link.social_icon %}
 										{% endif %}
@@ -96,7 +96,7 @@
 							<h2>{{ site.data.company.title }}</h2>
 						</li>
 						<li>{{ site.data.company.description }}</li>
-						<li><a href="/feed.xml">{% include social-icon.html icon="rss" %} Subscribe with RSS</a></li>
+						<li><a href="/feed.xml">{% include social-icon.html icon="RSS" %} Subscribe with RSS</a></li>
 					</ul>
 				</div>
 			</div>

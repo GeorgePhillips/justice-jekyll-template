@@ -50,6 +50,8 @@ defaults:
       type: "posts"
     values:
       layout: post
+      _comments:
+        image: Shown in social shares and the advice list.
 
 permalink: pretty
 
@@ -78,3 +80,28 @@ call_to_actions:
   - Advice
   - Map
 
+social_icons:
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS
+
+_comments:
+  large_header: Toggles the size of the top banner.
+  author_staff_member: The staff member writing this post.
+  call_to_action: The type of request shown at the bottom of this page.
+  background_image_path: The image shown in the top banner, leave blank for the default.
+  testimonials: Update, add or remove testimonials
+  map: Update the map location and display settings
+  latitude: Coordinates for the center marker on the map
+  longitude: Coordinates for the center marker on the map
+  zoom: The zoom level for the map
+  phone_extension: The digits after dialing the company phone
+  credentials: Shown as subtext on staff member summaries
+  contact_email_address: Address for the contact form to send to
+  new_window: Whether the link opens a new browser tab/window

@@ -14,17 +14,17 @@
   links:
     - name: Facebook
       link:
-      social_icon: facebook
+      social_icon: Facebook
       new_window: true
     - name: Twitter
       link:
-      social_icon: twitter
+      social_icon: Twitter
       new_window: true
     - name: Google+
       link:
-      social_icon: google-plus
+      social_icon: Google Plus
       new_window: true
     - name: LinkedIn
       link:
-      social_icon: linkedin
+      social_icon: LinkedIn
       new_window: true
