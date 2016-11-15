@@ -2,11 +2,13 @@
 # Site
 
 title: Justice Template
-description: Jekyll template with example content for a law firm.
 url: http://orchid-heron.cloudvent.net
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname: justice-jekyll-template.disqus.com
+
+# Default description in social shares for the jekyll-seo-tag gem
+description: Jekyll template with example content for a law firm.
 
 # Author details for the jekyll-seo-tag gem
 author:
