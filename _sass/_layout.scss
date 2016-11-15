@@ -33,8 +33,7 @@ header {
 
 		&.main-hero {
 			height: 80vh;
-			background-size: cover;
-			background-position: calc(50% - 300px) 100px;
+			background-position: calc(50% - 350px) calc(100% + 20px);
 		}
 
 		.container {
