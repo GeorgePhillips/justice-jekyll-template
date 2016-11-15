@@ -4,7 +4,7 @@ date: 2016-08-10 00:00:00
 categories:
   - Business
 staff_author: jane-doe
-post_image: "https://unsplash.it/600/450?image=737"
+image: "https://unsplash.it/600/450?image=737"
 large_header: false
 ---
 

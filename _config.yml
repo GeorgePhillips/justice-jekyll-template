@@ -8,17 +8,29 @@ google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname: justice-jekyll-template.disqus.com
 
+# Author details for the jekyll-seo-tag gem
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 
+# Social details for the jekyll-seo-tag gem
+social:
+  name: Ben Balter
+  links:
+    - https://twitter.com/BenBalter
+    - https://www.facebook.com/ben.balter
+    - https://www.linkedin.com/in/BenBalter
+    - https://plus.google.com/+BenBalter
+    - https://github.com/benbalter
+    - https://keybase.io/benbalter
 
 # -----
 # Build
 
 paginate: 1
 paginate_path: "/advice/page-:num/"
+
 collections:
   - staff
 
@@ -29,6 +41,7 @@ defaults:
     values:
       layout: page
       background_image_path: /uploads/building.jpg
+      image: /uploads/building.jpg
   -
     scope:
       path: ""

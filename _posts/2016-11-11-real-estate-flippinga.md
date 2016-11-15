@@ -4,7 +4,7 @@ date: 2016-11-11 00:00:00
 categories:
   - Property
 staff_author: john-doe
-post_image: "https://unsplash.it/600/450?image=448"
+image: "https://unsplash.it/600/450?image=448"
 large_header: false
 ---
 
