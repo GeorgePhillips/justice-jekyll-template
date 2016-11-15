@@ -375,3 +375,16 @@ footer {
 	@extend .testimonial-author;
 	margin: 1em 0;
 }
+
+
+
+// CloudCannon Editor Links (https://docs.cloudcannon.com/editing/editor-links/)
+
+.editor-link {
+	// display: none;
+	margin-top: 0;
+}
+
+.cms-editor-active .editor-link {
+	display: block;
+}
