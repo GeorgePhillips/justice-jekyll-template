@@ -17,6 +17,8 @@ author:
 # -----
 # Build
 
+paginate: 1
+paginate_path: "/advice/page-:num/"
 collections:
   - staff
 
@@ -45,6 +47,7 @@ gems:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-paginate
 
 exclude:
   - Gemfile

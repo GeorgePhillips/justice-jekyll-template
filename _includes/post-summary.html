@@ -1,12 +1,20 @@
 <li class="post-summary">
-	<h3 class="post-summary-title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
-	{% include post-summary-details.html post=include.post %}
+	{% if include.post.post_image %}
+		<div class="post-summary-image">
+			<img src="{{ include.post.post_image }}" alt="Photo of {{ include.post.title }}">
+		</div>
+	{% endif %}
 
-	<p class="post-summary-excerpt">{{ include.post.excerpt }}</p>
+	<div class="post-summary-content {% if include.post.post_image %}has-post-summary-image{% endif %}">
+		<h3 class="post-summary-title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+		{% include post-summary-details.html post=include.post %}
 
-	{% assign author_id = include.post.staff_author | prepend: "/staff/" |append: "/" %}
-	{% assign author = site.staff | where: "url", author_id | first %}
-	<p class="post-summary-author">
-		<img src="{{ author.image }}" alt="Photo of {{ author.name }}" width="30" height="30"> {{ author.name }}
-	</p>
+		{% assign author_id = include.post.staff_author | prepend: "/staff/" |append: "/" %}
+		{% assign author = site.staff | where: "url", author_id | first %}
+		<p class="post-summary-author">
+			<img src="{{ author.image }}" alt="Photo of {{ author.name }}" width="30" height="30"> {{ author.name }}
+		</p>
+	</div>
+
+	<p class="post-summary-excerpt">{{ include.post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 </li>
