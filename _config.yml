@@ -18,19 +18,14 @@ author:
 
 # Social details for the jekyll-seo-tag gem
 social:
-  name: Ben Balter
+  name: Justice Template
   links:
-    - https://twitter.com/BenBalter
-    - https://www.facebook.com/ben.balter
-    - https://www.linkedin.com/in/BenBalter
-    - https://plus.google.com/+BenBalter
-    - https://github.com/benbalter
-    - https://keybase.io/benbalter
+    - https://github.com/CloudCannon/justice-jekyll-template
 
 # -----
 # Build
 
-paginate: 1
+paginate: 10
 paginate_path: "/advice/page-:num/"
 
 collections:
