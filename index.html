@@ -1,17 +1,17 @@
 ---
-title:
+title: Test
 call_to_action: Contact
 background_image_path:
 large_header: true
 testimonials:
   - message: We use Justice Law in all our endeavours. They offer an unparalleled service when it comes to running a business.
-    image: "//placekitten.com/60/60?a=.png"
+    image: //placekitten.com/60/60?a=.png
     name: Joice Carmold
-  - message: Justice Law are the best of the best. Being local, they care about people and have strong ties to the community.
-    image: "//fillmurray.com/60/60?a=.png"
+  - message: 'Justice Law are the best of the best. Being local, they care about people and have strong ties to the community.'
+    image: //fillmurray.com/60/60?a=.png
     name: Peter Rottenburg
   - message: Justice Law were everything we could have hoped for when buying our first home. Highly recommended to all.
-    image: "//placebear.com/60/60?a=.png"
+    image: //placebear.com/60/60?a=.png
     name: D. and G. Gibbleston
 ---
 
@@ -25,7 +25,7 @@ testimonials:
 	{% for testimonial in page.testimonials %}
 		<blockquote class="testimonial">
 			<p class="testimonial-message">{{ testimonial.message }}</p>
-			<p class="testimonial-author"><img src="{{ testimonial.image }}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p>
+			<p class="testimonial-author"><img src="{{ testimonial.image }}" alt="Photo of {{ testimonial.name }}" /> {{ testimonial.name }}</p>
 		</blockquote>
 	{% endfor %}
 </div>
